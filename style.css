@@ -1,7 +1,9 @@
 :root{
     font-size: 62.5%; 
     --color-base-text: #053F5C;
-    --color-base
+    --color-base-100:#9FE7F5;
+    --color-base-200:#429EBD;
+
 
 
 .img-carrosel{
