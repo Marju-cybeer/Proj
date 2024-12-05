@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Integrador 01</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/global.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script> (função() {var target = document.currentScript; window.addEventListener('load', function () { calendar.schedulingButton.load({ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0l3zgTpMdmC0zW20wABd2UliH9i86YlACMmv0HweXI3HHUgo5SFWZpzFl4LupfY2xNwKpMH6zI? gv=verdadeiro',cor: '#039BE5', rótulo: 'Marque uma consulta', alvo,})})})</script>
 </head>
 <body style="font-size: 20px;">
     <header class="d-flex  align-items-center justify-content-between" >
-    <img src="./assest/logo.jpeg">
-        <h1 class="ms-3 ">Paraná Hoe - Canoagem Va'a</h1>
-        
+    <img id="logo" src="./assest/logo.png">
+        <h1 class="ms-3 ">Canoagem Va'a</h1>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
+            <div class="collapse navbar-collapse show" id="navbarText"style>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active fs-3" aria-current="page" href="#pontos">Remadas</a>
+                  <a class="nav-link active fs-3" aria-current="page" href="#pontos"><img src="./assest/tsunami.svg">Remadas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3" href="#sobre">Agenda</a>
+                  <a class="nav-link fs-3" href="#sobre"><img src="./assest/tsunami.svg">Agenda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3" href="#newsletter">Contato</a>
+                  <a class="nav-link fs-3" href="#newsletter"><img src="./assest/tsunami.svg">Contato</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>  
     </header>
+    <br>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +103,90 @@
                 </div>
                  </div>
                 <br>
-                <h1>SISTEMA DE CALENDARIO INTEGRADO COM FORMULARIO E VENDA</h1>
+                
+                <div class="calendario" style="display: flex;">
+                  <div class="containerCalendario">
+                    <table class="topoCalendario text-center">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th colspan="5" class="mes">
+                            Dezembro 2024
+                          </th>
+                          <th class="Proximo">
+                            <i> </i>
+                          </th>
+                        </tr>
+                        <tr class="dias">
+                          <th class="dom">Dom </th>
+                          <th>Seg </th>
+                          <th>Ter </th>
+                          <th>Qua </th>
+                          <th>Qui </th>
+                          <th>Sex </th>
+                          <th>Sab </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                        <td><button id="botao" class="semanaOff">24</button></td>
+                        <td><button id="botao" class="semanaOff">25</button></td>
+                        <td><button id="botao"class="semanaOff">26</button></td>
+                        <td><button id="botao" class="semanaOff">27</button></td>
+                        <td><button id="botao" class="semanaOff">28</button></td>
+                        <td><button id="botao" class="semanaOff">29</button></td>
+                        <td><button id="botao" class="semanaOff">30</button></td>
+                      </tr>
+                      <tr>
+                        <td><button id="botao" class="semanaOn">1</button></td>
+                        <td><button id="botao" class="semanaOn">2</button></td>
+                        <td><button id="botao" class="semanaOn">3</button></td>
+                        <td><button id="botao" class="semanaOn">4</button></td>
+                        <td><button id="botao" class="semanaOn">5</button></td>
+                        <td><button id="botao" class="semanaOn">6</button></td>
+                        <td><button id="botao" class="semanaOn">7</button></td>
+                      </tr>
+                      <tr>
+                        <td><button id="botao" class="semanaOn">8</button></td>
+                        <td><button id="botao" class="semanaOn">9</button></td>
+                        <td><button id="botao" class="semanaOn">10</button></td>
+                        <td><button id="botao" class="semanaOn">11</button></td>
+                        <td><button id="botao" class="semanaOn">12</button></td>
+                        <td><button id="botao" class="semanaOn">13</button></td>
+                        <td><button id="botao" class="semanaOn">14</button></td>        
+                      </tr>
+                      <tr>
+                        <td><button id="botao" class="semanaOn">15</button></td>
+                        <td><button id="botao" class="semanaOn">16</button></td>
+                        <td><button id="botao" class="semanaOn">17</button></td>
+                        <td><button id="botao" class="semanaOn">18</button></td>
+                        <td><button id="botao" class="semanaOn">19</button></td>
+                        <td><button id="botao" class="semanaOn">20</button></td>
+                        <td><button id="botao" class="semanaOn">21</button></td>
+                      </tr>
+                      <tr>
+                        <td><button id="botao" class="semanaOn">22</button></td>
+                        <td><button id="botao" class="semanaOn">23</button></td>
+                        <td><button id="botao" class="semanaOn">24</button></td>
+                        <td><button id="botao" class="semanaOn">25</button></td>
+                        <td><button id="botao" class="semanaOn">26</button></td>
+                        <td><button id="botao" class="semanaOn">27</button></td>
+                        <td><button id="botao" class="semanaOn">28</button></td>
+                      </tr>
+                      <tr>
+                        <td><button id="botao" class="semanaOn">29</button></td>
+                        <td><button id="botao" class="semanaOn">30</button></td>
+                        <td><button id="botao" class="semanaOn">31</button></td>
+                        <td><button id="botao" class="semanaOff">1</button></td>
+                        <td><button id="botao" class="semanaOff">2</button></td>
+                        <td><button id="botao" class="semanaOff">3</button></td>
+                        <td><button id="botao" class="semanaOff">4</button></td>
+                      </tr>
+                      </tbody>
+                      
+                    </table>
+                  </div>
+                </div>
         </section>
         
 </div>
