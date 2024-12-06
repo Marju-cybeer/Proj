@@ -173,10 +173,10 @@ header nav a:hover {
 
 }
 
-.swiper {
+/*.swiper {
     width: 600px;
     height: 500px;
-} 
+} */
 .swiper img{
     width: 100%;
     object-fit: cover;
