@@ -1,0 +1,80 @@
+.swiper {
+    width: 600px;
+    height: 500px;
+} 
+.swiper img{
+    width: 100%;
+    object-fit: cover;
+}
+
+html,
+body {
+  position: relative;
+  height: 25%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 60%;
+  height: 290%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 650px;
+}
+
+swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+
+}
+
+swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+}
+
+img {
+  width: 1%;
+  height: 5%;
+}
+
+footer {
+  display: flex;
+  text-align: center; 
+  padding: 20px; 
+  background-color: #333; 
+  color: white;
+  justify-content: center;
+}
+
+.rede-sociais {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  right: 32px;
+}
+
+.rede-sociais img {
+  width: 32px;
+  height: 32px;
+}
+
+.rede-sociais p {
+  display: block;
+}

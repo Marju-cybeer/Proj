@@ -1,30 +1,31 @@
 
 body{
     background-color:var(--color-base-white-100) !important;
+    font-size: "";
 }
 :root{
     font-size: 62.5%; 
     --color-base-text: black;
-    --color-base-white-100:#C7D4CA;
-    --color-base-blue-200:#7AB7C1;
-    --color-base-red-100:#E66C3C;
-    --color-base-red-200:#D12420;
-    --color-base-red-300:#A51E1C;
-    --color-base-green-200:#21534C;
-    --color-base-green-300:#163733;
+    --color-base-white-100:#EDE9DA;
+    --color-base-blue-200:#12AACC;
+    --color-base-yellow-100:#FAC420;
+    --color-base-yellow-200:#F5A40F;
+    --color-base-yellow-300:#D6711A;
+    --color-base-blue-300:#007EB0;
+    --color-base-red-300: #d12420;
 }
 
 header{
-    background-color: var(--color-base-blue-200);
+    background-color: var(--color-base-yellow-100);
     color: var(--color-base-text);
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px #21534C;
+    box-shadow: 0px 5px 10px black;
 }
 header nav a {
-    color:var(--color-base-red-200);
+    color:var(--color-base-text);
     text-decoration: none;
-    margin: 0px 15px;
+    margin: 0px 15px;    
    /* margin-top: auto;*/
 }
 header nav a:hover {
@@ -35,14 +36,17 @@ header nav a:hover {
     text-align: center;
     font-family: "brush-script-std", sans-serif;
 }
+
 .nav-link{
-    color: var(--color-base-red-200) !important;
-    font-size: 1.2rem !important;
+    color: var(--color-base-text) !important;
+    font-size: 5rem;
+    
     /*font-weight: bold !important;*/
 }
 
-.logo{
-    margin-top: 50rem;
+#logo{
+    height: 150px;
+    width: 150px;
 }
 .img-carrosel{
     width: 100%;
@@ -89,9 +93,9 @@ header nav a:hover {
    }
 
 
-   .card{
+.card{
     min-height: 200px;
-    box-shadow: 15px 10px 20px var(--color-base-green-300);
+    box-shadow: 15px 10px 20px black;
 }
 .card-body{
     display: flex;
@@ -99,17 +103,7 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--color-base-red-100);
-}
-
-   footer{
-    background-color: var(--color-base-green-200);
-    color: var(--color-base-white-100);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 10px 0;
-    min-height: 84px;
-    border-radius: 10px;
+    background-color: var(--color-base-yellow-300);
 }
 
 .calendario{
@@ -118,7 +112,7 @@ header nav a:hover {
     padding: 10px;
     
 }
-.botao{
+#botao{
     align-items: center;
     word-spacing: 100px;
     height: 50%;
@@ -131,9 +125,12 @@ header nav a:hover {
     text-transform: uppercase; 
 
 }
+.botaoNav{
+    width: 50px !important;
+}
 .semanaOff {
     opacity: 0.5;
-    color: var(--color-base-red-200);
+    color: var(--color-base-red-300);
     
 }
 .semanaOn{
@@ -162,60 +159,82 @@ header nav a:hover {
     text-align: left;
     width: 10px;
 }
-/* Estilo geral dos botões */
-button {
-    width: 100%; /* Ocupa toda a largura disponível */ /* Espaçamento interno */
-    font-size: 18px; /* Tamanho da fonte */ /* Peso da fonte *//* Texto em maiúsculas */ /* Bordas arredondadas */
-    border: none; /* Remove a borda padrão */
-    background-color: var(--color-base-blue-200); /* Cor de fundo */
-    color: var(--color-base-text); /* Cor do texto */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para hover e clique */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
-    margin: 8px 0; /* Espaçamento entre os botões */
-    font-family: 'Arial', sans-serif; /* Fonte limpa e legível */
+@media (min-width:768px) {
+   #logo {
+    height: 100px;
+    width: 100px;
+   }
+   .ms-3{
+    font-size: 6rem;
+   }
+   .nav-link{
+    font-size: 2.3rem !important;
+   }
+
 }
 
-/* Efeito ao passar o mouse (hover) */
-button:hover {
-    background-color: var(--color-base-blue-200); /* Muda a cor de fundo para um tom mais escuro */
-    transform: translateY(-4px); /* Leve deslocamento para cima */
+.swiper {
+    width: 600px;
+    height: 500px;
+} 
+.swiper img{
+    width: 100%;
+    object-fit: cover;
 }
-
-/* Efeito ao clicar no botão (active) */
-button:active {
-    background-color: var(--color-base-green-200); /* Tom de azul mais escuro */
-    transform: translateY(0); /* Retorna à posição original */
-}
-
-/* Botão com estilo desabilitado */
-button:disabled {
-    background-color: #bdc3c7; /* Cor de fundo desabilitada */
-    color: #7f8c8d; /* Cor do texto desabilitado */
-    cursor: not-allowed; /* Cursor de não permitido */
-    box-shadow: none; /* Remove sombra quando desabilitado */
-}
-
-/* Botão com uma classe de destaque */
-button.destaque {
-    background-color: var(--color-base-red-200); /* Cor de fundo vermelha */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
-}
-
-/* Efeito de hover no botão com destaque */
-button.destaque:hover {
-    background-color: var(--color-base-red-300); /* Cor de fundo mais escura quando passar o mouse */
-    transform: translateY(-4px);
-}
-
-/* Botão de confirmação com fundo verde */
-button.confirmacao {
-    background-color: var(--color-base-green-200); /* Fundo verde */
-    color: var(--color-base-white-100); /* Texto branco */
-}
-
-/* Efeito de hover no botão de confirmação */
-button.confirmacao:hover {
-    background-color: var(--color-base-green-300); /* Verde mais escuro ao passar o mouse */
-    transform: translateY(-4px);
-}
+swiper-container {
+    width: 60%;
+    height: 290%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 650px;
+  }
+  
+  swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  
+  }
+  
+  swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  /*img {
+    width: 1%;
+    height: 5%;
+  }*/
+  
+  footer {
+    display: flex;
+    text-align: center; 
+    padding: 20px; 
+    background-color:var(--color-base-blue-300); 
+    color: var(--color-base-white-100);
+    justify-content: center;
+  }
+  
+  .rede-sociais {
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    right: 32px;
+  }
+  
+  .rede-sociais img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .rede-sociais p {
+    display: block;
+  }
+  

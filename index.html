@@ -10,28 +10,29 @@
     crossorigin="anonymous">
     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
   <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-    <script> (função() {var target = document.currentScript; window.addEventListener('load', function () { calendar.schedulingButton.load({ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0l3zgTpMdmC0zW20wABd2UliH9i86YlACMmv0HweXI3HHUgo5SFWZpzFl4LupfY2xNwKpMH6zI? gv=verdadeiro',cor: '#039BE5', rótulo: 'Marque uma consulta', alvo,})})})</script>
+  <link rel="stylesheet" href="https://use.typekit.net/tuq8mjl.css">
+
 </head>
-<body style="font-size: 20px;">
+<body>
     <header class="d-flex  align-items-center justify-content-between" >
     <img id="logo" src="./assest/logo.png">
-        <h1 class="ms-3 ">Canoagem Va'a</h1>
+        <h1 class="ms-3 ">Remo Aloha</h1>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+            <button class="navbar-toggler botaoNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
             aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse show" id="navbarText"style>
+            <div class="collapse navbar-collapse show" id="navbarText">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active fs-3" aria-current="page" href="#pontos"><img src="./assest/tsunami.svg">Remadas</a>
+                  <a class="nav-link active fs-2" aria-current="page" href="#pontos"><img src="./assest/tsunami.svg"> Remadas </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3" href="#sobre"><img src="./assest/tsunami.svg">Agenda</a>
+                  <a class="nav-link fs-2" href="#sobre"><img src="./assest/tsunami.svg"> Agenda </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3" href="#newsletter"><img src="./assest/tsunami.svg">Contato</a>
+                  <a class="nav-link fs-2" href="#newsletter"><img src="./assest/tsunami.svg"> Contato </a>
                 </li>
               </ul>
             </div>
@@ -47,10 +48,10 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assest/foto2.jpg" class="d-block img-carrosel" alt="...">
+            <img src="./assest/foto13.jpeg" class="d-block img-carrosel" alt="...">
             <div class="legenda carousel-caption d-none d-md-block">
               <h5>Aloha!!! Seja bem-vindo(a)!</h5>
-              <p>Somos pioneira no litoral do Paraná em canoagem Va'a.</p>
+              <p>Somos sua melhor opção de aventura do litoral do Paraná em canoagem Va'a.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -187,21 +188,54 @@
                     </table>
                   </div>
                 </div>
-        </section>
         
-</div>
-                </div>
-            </form>
-        </section>
         <br>
         
     </main>
-    <footer class="text-center fs-2">
-        <p>
-          <p><b><div id="ParanaHoe"></div></b></p> <br>
-            &copy; 2024 Paraná Hoe. Todos os direitos reservados.
-        </p>
-    </footer>
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
+    slides-per-view="4" style="border-radius: 30px;">
+    <swiper-slide><img src=".//parceiros/pepsisemfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/bmw2semfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/canoa2semfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/canoansemfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/petrobras.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/canoiansemfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/nissinsemfundo.png"></swiper-slide>
+    <swiper-slide><img src=".//parceiros/zaelisemfundo.png"></swiper-slide>
+  </swiper-container><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+<footer>
+  <div>
+    <p>&copy; 2024 Remo Aloha. Todos os direitos reservados.</p>
+
+    <p>
+      <a href="https://www.example.com" style="color: #fff; text-decoration: none;">Termos de Uso</a> | <a
+        href="https://www.example.com" style="color: #fff; text-decoration: none;">Política de Privacidade</a>
+    </p>
+  </div>
+  <div class="rede-sociais">
+    <div>
+      <img src=".//parceiros/what.jpg">
+      <p>
+        (00)4002-8922</p>
+
+    </div>
+    <div>
+      <img src=".//parceiros//inst.png">
+      <p>
+        @canoan</p>
+    </div>
+    <div>
+      <img src=".//parceiros/twitt.png">
+      <p>
+        @canoan</p>
+    </div>
+  </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
     crossorigin="anonymous"></script>
