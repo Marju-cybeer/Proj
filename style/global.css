@@ -208,10 +208,10 @@ swiper-container {
     object-fit: cover;
   }
   
-  /*img {
+  .apoio{
     width: 1%;
     height: 5%;
-  }*/
+  }
   
   footer {
     display: flex;
@@ -220,6 +220,7 @@ swiper-container {
     background-color:var(--color-base-blue-300); 
     color: var(--color-base-white-100);
     justify-content: center;
+    width: 100%;
   }
   
   .rede-sociais {
@@ -227,7 +228,9 @@ swiper-container {
     gap: 24px;
     position: absolute;
     right: 32px;
+    
   }
+  
   
   .rede-sociais img {
     width: 32px;
@@ -238,3 +241,17 @@ swiper-container {
     display: block;
   }
   
+  @media (max-width:768px)  {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .rede-sociais{
+    position: relative;
+    right: 0;
+    }
+    
+  }
