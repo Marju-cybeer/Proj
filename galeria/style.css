@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+   
+ }
+
+.container-gallery {
+    min-height:90vh ;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assest/fundo04.png);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-color: rgba(218, 206, 206, 0.349);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+h1 {
+    text-align: center;
+    color: #d2e7fa;
+    margin-bottom: 25px;
+}
+
+
+.gallery-item:hover h3 {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.overlay h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
