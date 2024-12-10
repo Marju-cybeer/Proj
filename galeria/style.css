@@ -21,7 +21,7 @@
     background-image: url(./assest/fundo04.png);
     background-size: cover;
     backdrop-filter: blur(10px);
-    background-color: rgba(218, 206, 206, 0.349);
+
 }
 
 .gallery {
@@ -41,7 +41,7 @@
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     transition: transform 0.3s ease;
 }

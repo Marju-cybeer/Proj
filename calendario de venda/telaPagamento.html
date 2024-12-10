@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Pagamento</title>
+  <link rel="stylesheet" href="telaPagamento.css">
+</head>
+<body>
+  <div class="container">
+    <div class="payment-box">
+      <h1>Pague sua Compra</h1>
+      <p class="description">Escaneie o código QR abaixo para realizar o pagamento.</p>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.exemplo.com/pagamento&size=200x200" alt="QR Code">
+      </div>
+
+      <div class="details">
+        <p><strong>Valor:</strong> R$ 100,00</p>
+        <p><strong>Descrição:</strong> Passeio</p>
+      </div>
+
+      <p class="note">Ao escanear, você será redirecionado para o nosso sistema de pagamento seguro.</p>
+    </div>
+  </div>
+</body>
+</html>

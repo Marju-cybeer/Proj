@@ -1,18 +1,24 @@
 
 body{
     background-color:var(--color-base-white-100) !important;
-    font-size: "";
+    font-family: Arial, sans-serif;
 }
 :root{
     font-size: 62.5%; 
     --color-base-text: black;
     --color-base-white-100:#EDE9DA;
-    --color-base-blue-200:#12AACC;
+    --color-base-white-200: #B6DEF9;
+    --color-base-white-300:#f2e5bf;
+    --color-base-blue-100:#12AACC;
+    --color-base-blue-200:#007EB0;
+    --color-base-blue-300:#053F5C;
     --color-base-yellow-100:#FAC420;
     --color-base-yellow-200:#F5A40F;
     --color-base-yellow-300:#D6711A;
-    --color-base-blue-300:#007EB0;
-    --color-base-red-300: #d12420;
+    --color-base-red-200: #d12420;
+    --color-base-red-300:#7e1816;
+
+
 }
 
 header{
@@ -23,10 +29,7 @@ header{
     box-shadow: 0px 5px 10px black;
 }
 header nav a {
-    color:var(--color-base-text);
     text-decoration: none;
-    margin: 0px 15px;    
-   /* margin-top: auto;*/
 }
 header nav a:hover {
     text-decoration: underline;
@@ -39,9 +42,11 @@ header nav a:hover {
 
 .nav-link{
     color: var(--color-base-text) !important;
-    font-size: 5rem;
-    
-    /*font-weight: bold !important;*/
+    font-size: 5rem !important;
+}
+#nav-botao{
+    background-color: var(--color-base-yellow-100) !important;
+    margin: none;
 }
 
 #logo{
@@ -96,7 +101,9 @@ header nav a:hover {
 .card{
     min-height: 200px;
     box-shadow: 15px 10px 20px black;
+    font-size: 1.8rem;
 }
+
 .card-body{
     display: flex;
     flex-direction: column;
@@ -104,62 +111,88 @@ header nav a:hover {
     justify-content: center;
     text-align: center;
     background-color: var(--color-base-yellow-300);
-}
-
-.calendario{
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
     
 }
-#botao{
-    align-items: center;
-    word-spacing: 100px;
-    height: 50%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    padding: 12px 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    text-transform: uppercase; 
 
-}
-.botaoNav{
-    width: 50px !important;
-}
-.semanaOff {
-    opacity: 0.5;
-    color: var(--color-base-red-300);
-    
-}
-.semanaOn{
-    opacity: 1;
-}
-.mes{
-    font-size: 30px;
-    align-items: center;
-    color:black;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.405);
-    text-transform: uppercase;
-    background-color: var(--color-base-blue-200);
-    border-radius: 10px;
-}
-.dias{
-    font-size: 20px;
-    text-indent: 15px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.354);
-    color: var(--color-base-text);
-    background-color: var(--color-base-blue-200);
-    text-align: left !important;
-    height: 100%;
-    width: 100%;
-}
-.dom{
-    text-align: left;
-    width: 10px;
+/*Anthony Calendario de venda*/
+
+
+/*Vinicius galeria*/
+.container-gallery {
+  min-height:90vh ;
+  width: 90%;
+  margin: 10px auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+
+h1 {
+  text-align: center;
+  color: #d2e7fa;
+  margin-bottom: 25px;
+}
+
+
+.gallery-item:hover h3 {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+
+/*Alan parceiros e rodapé*/
 .swiper {
     width: 600px;
     height: 500px;
@@ -204,7 +237,7 @@ swiper-container {
     display: flex;
     text-align: center; 
     padding: 20px; 
-    background-color:var(--color-base-blue-300); 
+    background-color:var(--color-base-blue-200); 
     color: var(--color-base-text);
     font-size: 1.8rem;
     justify-content: center;
@@ -229,82 +262,7 @@ swiper-container {
   .rede-sociais p {
     display: block;
   }
-  .container-gallery {
-    min-height:90vh ;
-    width: 90%;
-    margin: 10px auto;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url(./assest/fundo04.png);
-    background-size: cover;
-    backdrop-filter: blur(10px);
-    background-color: rgba(218, 206, 206, 0.349);
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 16px;
-    padding: 0;
-    list-style: none;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-
-h1 {
-    text-align: center;
-    color: #d2e7fa;
-    margin-bottom: 25px;
-}
-
-
-.gallery-item:hover h3 {
-    opacity: 1;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
-}
-
-.overlay h3 {
-    font-size: 24px;
-    text-align: center;
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
-
+  
 
   @media (max-width:768px)  {
     footer{
