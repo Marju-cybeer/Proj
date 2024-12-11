@@ -1,0 +1,238 @@
+body{
+    background-color:var(--color-base-white-100) !important;
+    font-family: Arial, sans-serif;
+}
+:root{
+    font-size: 62.5%; 
+    --color-base-text: black;
+    --color-base-white-100:#EDE9DA;
+    --color-base-white-200: #B6DEF9;
+    --color-base-white-300:#f2e5bf;
+    --color-base-blue-100:#12AACC;
+    --color-base-blue-200:#007EB0;
+    --color-base-blue-300:#053F5C;
+    --color-base-yellow-100:#FAC420;
+    --color-base-yellow-200:#F5A40F;
+    --color-base-yellow-300:#D6711A;
+    --color-base-red-200: #f51a16;
+    --color-base-red-300:#7e1816;
+}
+header{
+    background-color: var(--color-base-yellow-100);
+    color: var(--color-base-text);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+}
+header nav a {
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.ms-3{
+    font-size: 6rem;
+    text-align: center;
+    font-family: "brush-script-std", sans-serif;
+}
+
+.nav-link{
+    color: var(--color-base-text) !important;
+    font-size: 5rem !important;
+}
+#nav-botao{
+    background-color: var(--color-base-yellow-100) !important;
+    margin: none;
+}
+
+#logo{
+    height: 150px;
+    width: 150px;
+}
+
+#newsletter{
+    background: var(--color-base-blue-100);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+form {
+    background: var(--color-base-white-200); 
+    box-shadow: 1px 0px 1.2px 0px #a9a9a9;
+    border-radius:3px;
+    /*max-width: 1000px;*/
+    margin: auto;
+    padding:2rem;
+    font-size: 2rem;
+    
+  }
+  #cadastro{
+    font-size: 3rem;
+  }
+  .coll-md-6 { 
+    position: relative;
+    margin-bottom:30px;
+  }
+  .form-control {
+    border: 3px solid #a9a9a9;
+    background: none;
+    padding: 0.8em;
+    color: black
+  }
+  input{
+    font-size: 1.875rem !important;
+  }
+  
+  .form-label {
+    color: black;
+    pointer-events: none;
+   /* transform: translateY(1rem);*/
+    transition: 350ms;
+
+  }
+  .form-control:focus,
+  .form-control:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+   
+    
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .botao{
+    background-color: var(--color-base-red-200);
+    color: var(--color-base-text);
+    box-shadow: 15px 10px 20px #a9a9a9;
+    border-color: #FFE4C4;
+    border-radius: 10px;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payment-box {
+  background-color:var(--color-base-white-200);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: center;
+  margin-left: 33rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  color: var(--color-base-text);
+}
+#QR{
+  font-size: 1.8rem;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--color-base-text);
+  margin-bottom: 20px;
+}
+
+.qr-code img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--color-base-text);
+}
+
+.details strong {
+  color: var(--color-base-text);
+}
+
+.note {
+  font-size: 14px;
+  color: var(--color-base-text);
+}
+footer {
+  display: flex;
+  text-align: center; 
+  padding: 20px; 
+  background-color:var(--color-base-blue-200); 
+  color: var(--color-base-text);
+  font-size: 1.8rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.rede-sociais {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  right: 32px;
+  color: var(--color-base-text);
+  
+}
+
+
+.rede-sociais img {
+  width: 32px;
+  height: 32px;
+}
+
+.rede-sociais p {
+  display: block;
+}
+
+@media (max-width:768px)  {
+  footer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .rede-sociais{
+  position: relative;
+  right: 0;
+  }
+  #newsletter{
+    font-size: 2.3;
+  }
+#logo {
+    height: 100px;
+    width: 100px;
+   }
+.ms-3{
+    font-size: 2.5rem;
+   }
+.nav-link{
+    font-size: 2.3rem !important;
+   }
+swiper-container{
+    width: 100%;
+    height: 70%;
+}   
+.payment-box{
+  margin-left:40px;
+  width: 80%;
+}
+
+}
