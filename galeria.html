@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styleGaleria.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pxk1osc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <title>Galeria de Imagens</title>
+    
+</head>
+<body>
+        <header class="d-flex  align-items-center justify-content-between" >
+          <img id="logo" src="./assest/logo.png">
+              <h1 class="ms-3 ">Remo Aloha</h1>
+      
+              <nav id="nav-botao" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active fs-4" aria-current="page" href="./"><img src="./assest/house.svg"> Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-4" href="#"><img src="./assest/tsunami.svg"> Galeria de Remadas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-4" href="./index.html"><img src="./assest/tsunami.svg"> Agenda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-4" href="#contato"><img src="./assest/tsunami.svg"> Contato</a>
+                      </li>
+                    </ul>
+                     </div>
+                </div>
+              </nav>      
+          </header>
+          <div class="container">
+
+            <ul class="gallery">
+                <li class="gallery-item">
+                    <img id="imagem1" src="./assest/foto18.jpg"  alt="Imagem 1">
+                </li>
+    
+                <li class="gallery-item">
+                    <img id="imagem2" src="./assest/foto16.jpg" alt="Imagem 2">
+                </li>
+    
+                <li class="gallery-item">
+                  <img id="imagem3" src="./assest/foto29.jpeg" alt="Imagem 3">
+                </li>
+    
+                <li class="gallery-item">
+                  <img id="imagem4" src="./assest/foto22.jpeg" alt="Imagem 4"> 
+                </li>
+                
+            </ul>
+            <div id="modal" class="modal">
+              <span class="fechar" id="fechar">&times;</span>
+              <img src="" class="imagem-modal" id="imagem-modal">
+            </div>
+        </div>
+        <script src="./js/galeria.js"></script>
+
+
+    </body>
+    <footer>
+      <div class="direitos">
+        <p>&copy; 2024 Remo Aloha. Todos os direitos reservados.</p>
+        
+      </div>
+      <div id="contato" class="rede-sociais">
+        <div>
+          <img src="./assest/whatsapp.svg">
+          <p>
+            (00)4002-8922</p>
+      
+        </div>
+        <div>
+          <img src="./assest/instagram.svg">
+          <p>
+            @remo.aloha</p>
+        </div>
+        <div>
+          <img src="./assest/twitter.svg">
+          <p>
+            @remo.aloha</p>
+        </div>
+      
+      </div>
+      </footer>
+      <div class="wave-container">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+          <defs>
+              <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/>
+          </defs>
+          <g class="parallax">
+              <use xlink:href="#wave" x="48" y="0" fill="#2dbbfd"/>
+              <use xlink:href="#wave" x="48" y="3" fill="#2c98fd"/>
+              <use xlink:href="#wave" x="48" y="5" fill="#12AACC"/>
+              <use xlink:href="#wave" x="48" y="7" fill="#007EB0"/>
+          </g>
+      </svg>
+      <div class="ocean">
+        <div class="barco"></div>
+      </div>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+crossorigin="anonymous"></script> 
+
+</html>
+
+

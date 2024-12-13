@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%; 
+    --color-base-text: black;
+    --color-base-white-100:#EDE9DA;
+    --color-base-white-200: #B6DEF9;
+    --color-base-white-300:#f2e5bf;
+    --color-base-blue-100:#12AACC;
+    --color-base-blue-200:#007EB0;
+    --color-base-blue-300:#053F5C;
+    --color-base-yellow-100:#FAC420;
+    --color-base-yellow-200:#F5A40F;
+    --color-base-yellow-300:#D6711A;
+    --color-base-red-200: #d12420;
+    --color-base-red-300:#7e1816;
+
+
+}
+
+ body {
+   /* font-family: Arial, sans-serif;*/
+    background-color: var(--color-base-yellow-100);
+   
+ }
+ header{
+    background-color: var(--color-base-yellow-100);
+    color: var(--color-base-text);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+
+}
+header nav a {
+    text-decoration: none;
+    
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.ms-3{
+    font-size: 6rem;
+    text-align: center;
+    font-family: "brush-script-std", sans-serif;
+    
+}
+
+.nav-link{
+    color: var(--color-base-text) !important;
+    font-size: 3rem !important;
+}
+#nav-botao{
+    background-color: var(--color-base-yellow-100) !important;
+    margin: none;
+}
+
+#logo{
+    height: 150px;
+    width: 150px;
+}
+.container {
+  min-height:90vh ;
+  width: 90%;
+  margin: 10px auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover h3 {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem-modal {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+    display: flex;
+    text-align: center; 
+    background-color:var(--color-base-white-200); 
+    color: var(--color-base-text);
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -23px;
+   /* margin-top: -20px;*/
+    font-size: 1.8rem;
+  }
+  
+  .rede-sociais {
+    display: flex;
+    /*gap: 24px;*/
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+  }
+  
+  .rede-sociais img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .rede-sociais p {
+    display: flexbox;
+  }
+  
+  .direitos {
+    margin-top: 20px;
+    background-color: var(--color-base-white-200);
+    color:var(--color-base-text);
+    margin-bottom: -10px;
+  }
+  
+  .wave-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-base-white-200);
+  }
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+  
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    100% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    0% {
+        transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  
+  .barco {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 20px;
+    left: -120px; /* Começa fora da tela */
+    background-image: url("../assest/canoa\ gif.png");
+    background-size: cover;
+    animation: moverBarco 10s linear infinite;
+    
+  }
+  
+  @keyframes moverBarco {
+    100% {
+        left: -140px;
+    }
+    0% {
+        left: 95%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mySwiper {
+      padding: 10px;
+    }
+  
+    .swiper-slide {
+      width: 100% !important;
+    }
+  
+    .direitos p,
+    .rede-sociais p {
+      font-size: 14px;
+    }
+  
+    .rede-sociais  {
+      margin-bottom:0px;
+    }
+    .direitos{
+      margin-bottom: 0px;
+    }
+    .rede-sociais img {
+      width: 25px;
+      height: auto;
+    }
+    
+  }
+  
+  @media (min-width: 769px) {
+    .mySwiper {
+      padding: 20px;
+    }
+  
+    .swiper-slide {
+      width: 22% !important; 
+    }
+  
+    .mySwiper {
+      border-radius: 30px;
+    }
+    
+    .mySwiper img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    footer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      margin-bottom: -23px;
+    }
+  
+    .rede-sociais{
+      position: relative;
+      right: 0;
+      margin-top: 1px;
+    }
+    .rede-sociais img {
+      width: 25px;
+      height: auto;
+    }
+  }
+  
+    @media (max-width:768px)  {
+      footer{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: -23px;
+      }
+      #logo {
+          height: 100px;
+          width: 100px;
+         }
+      .ms-3{
+          font-size: 2.5rem;
+         }
+      .nav-link{
+          font-size: 2.3rem !important;
+         }
+      
+    }
+  
+@media (max-width:768px)  {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .rede-sociais{
+    position: relative;
+    right: 0;
+    }
+
+    #logo {
+        height: 100px;
+        width: 100px;
+       }
+    .ms-3{
+        font-size: 2.5rem !important;
+       }
+    .nav-link{
+        font-size: 2.3rem !important;
+       }
+    header{
+        padding-right: 50px;
+    }
+}

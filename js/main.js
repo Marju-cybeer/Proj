@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const mensagemValor = document.querySelector('#mensagem');
   const calendario = document.querySelector('.calendario');
 
-  mensagemValor.style.color = 'green';
+  mensagemValor.style.color = 'black';
   mensagemValor.style.fontSize = '16px';
   mensagemValor.style.fontWeight = 'bold';
   horarioSection.style.display = 'none';
@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       mensagemValor.textContent = '';
     }
   });
+
   const agendamentoButtons = document.querySelectorAll('.semanaOn');
   agendamentoButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.add('selecionado'); 
     });
   });
+  
 const remadaButtons = document.querySelectorAll('.selectRemadaPiaçaguera');
 remadaButtons.forEach(function(button) {
   button.addEventListener('click', function () {
@@ -67,8 +69,8 @@ remadaButtons.forEach(function(button) {
 });
 const confirmarButton = document.querySelector('.btn-confirmar');
 confirmarButton.addEventListener('click', function() {
-  alert('Agora confirme seu pagamento!');
-  window.open('telaPagamento.html', '_blank'); 
+  alert('Faça seu cadastro para continuar!');
+  window.open('formularioPagamento.html', '_blank'); 
 });
 
 });

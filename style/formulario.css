@@ -34,11 +34,12 @@ header nav a:hover {
     font-size: 6rem;
     text-align: center;
     font-family: "brush-script-std", sans-serif;
+    
 }
 
 .nav-link{
     color: var(--color-base-text) !important;
-    font-size: 5rem !important;
+    font-size: 3rem !important;
 }
 #nav-botao{
     background-color: var(--color-base-yellow-100) !important;
@@ -114,7 +115,7 @@ form {
     inherits: false;
   }
   .botao{
-    background-color: var(--color-base-red-200);
+    background-color: var(--color-base-yellow-100);
     color: var(--color-base-text);
     box-shadow: 15px 10px 20px #a9a9a9;
     border-color: #FFE4C4;
@@ -175,64 +176,207 @@ h1 {
 footer {
   display: flex;
   text-align: center; 
-  padding: 20px; 
-  background-color:var(--color-base-blue-200); 
+  background-color:var(--color-base-white-200); 
   color: var(--color-base-text);
-  font-size: 1.8rem;
   justify-content: center;
+  bottom: 0;
   width: 100%;
+  height: 15vh;
+  margin-bottom: -23px;
+  font-size: 1.8rem;
 }
 
 .rede-sociais {
   display: flex;
-  gap: 24px;
+  /*gap: 24px;*/
   position: absolute;
-  right: 32px;
-  color: var(--color-base-text);
-  
+  right: 20px;
+  margin-top: 20px;
 }
 
-
 .rede-sociais img {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
 }
 
 .rede-sociais p {
-  display: block;
+  display: flexbox;
 }
 
-@media (max-width:768px)  {
+.direitos {
+  margin-top: 20px;
+  background-color: var(--color-base-white-200);
+  color:var(--color-base-text);
+  margin-bottom: -10px;
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: var(--color-base-white-200);
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  100% {
+      transform: translate3d(-90px, 0, 0);
+  }
+  0% {
+      transform: translate3d(85px, 0, 0);
+  }
+}
+
+
+.barco {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 20px;
+  left: -120px; /* Começa fora da tela */
+  background-image: url("../assest/canoa\ gif.png");
+  background-size: cover;
+  animation: moverBarco 10s linear infinite;
+  
+}
+
+@keyframes moverBarco {
+  100% {
+      left: -140px;
+  }
+  0% {
+      left: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    padding: 10px;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  .direitos p,
+  .rede-sociais p {
+    font-size: 14px;
+  }
+
+  .rede-sociais  {
+    margin-bottom:0px;
+  }
+  .direitos{
+    margin-bottom: 0px;
+  }
+  .rede-sociais img {
+    width: 25px;
+    height: auto;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .mySwiper {
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    width: 22% !important; 
+  }
+
+  .mySwiper {
+    border-radius: 30px;
+  }
+  
+  .mySwiper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
   footer{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: -23px;
   }
 
   .rede-sociais{
-  position: relative;
-  right: 0;
+    position: relative;
+    right: 0;
+    margin-top: 1px;
   }
-  #newsletter{
-    font-size: 2.3;
+  .rede-sociais img {
+    width: 25px;
+    height: auto;
   }
-#logo {
+}
+
+  @media (max-width:768px)  {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -23px;
+    }
+    #logo {
+        height: 100px;
+        width: 100px;
+       }
+    .ms-3{
+        font-size: 2.5rem;
+       }
+    .nav-link{
+        font-size: 2.3rem !important;
+       }  
+    #newsletter{
+       font-size: 2.3;
+  }
+    #logo {
     height: 100px;
     width: 100px;
    }
 .ms-3{
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
    }
 .nav-link{
     font-size: 2.3rem !important;
    }
-swiper-container{
-    width: 100%;
-    height: 70%;
-}   
+   
 .payment-box{
   margin-left:40px;
   width: 80%;
 }
 
-}
